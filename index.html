@@ -1,22 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog de Games</title>
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#1a1a1a">
     <script src="main.js" type="module"></script>
 </head>
 <body>
-    <!--tela de login-->
-    <form id="formLogin">
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome"> required>
-        <br>
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha"> required>
-        <br>
-        <button type="submit">Entrar</button>
-    </form>
+  <!-- Login -->
+  <div id="loginPage">
+      <form id="formLogin">
+          <h2>Login</h2>
+          <input type="text" id="nome" placeholder="Nome" required>
+          <input type="password" id="senha" placeholder="Senha" required>
+          <button type="submit">Entrar</button>
+      </form>
+  </div>
+
+  <div id="gamesPage" style="display:none;">
+      <h1>Blog de Games</h1>
+      <div class="game">
+          <h2>Forza</h2>
+          <p>Informações do jogo.</p>
+          <br>
+          <p>Um jogo de carro com foco em corrida de rua, podendo usufruir de carros super esportivos a carros de ruas iconicos</p>
+      </div>
+      <div class="game">
+          <h2>Minecraft</h2>
+          <p>Informações do jogo.</p>
+          <br>
+          <p>Um jogo de sobrevivencia de mundo aberto, embora seu design caracteristico de mundo quadrado, ele entrega muita exploração e combinações de criação com servidores para multijogador</p>
+      </div>
+  </div>
 </body>
 </html>

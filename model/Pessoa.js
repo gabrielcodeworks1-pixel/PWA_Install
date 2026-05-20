@@ -1,5 +1,5 @@
-class Pessoa{
-    constructot(nome, idade){
+class Pessoa {
+    constructor(nome, idade){
         this.nome = nome;
         this.idade = idade;
     }

@@ -1,6 +1,6 @@
 class Usuario {
-    #id = 0
-    constructor(nome, email) {
+    #id = 0;
+    constructor(nome, senha){
         this.nome = nome;
         this.senha = senha;
     }
