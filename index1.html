@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Games</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <script src="main.js" type="module"></script>
+</head>
+<body>
+  <!-- Landing (primeira tela) -->
+  <div id="landingPage" style="display:block; text-align:center; padding:40px;">
+      <h1>Bem-vindo ao Blog de Games</h1>
+      <p>Escolha uma opção para continuar:</p>
+      <div style="margin-top:20px;">
+          <button id="btnEntrar">Entrar</button>
+          <button id="btnRegistrar">Registrar</button>
+      </div>
+  </div>
+
+  <!-- Login -->
+  <div id="loginPage" style="display:none;">
+      <form id="formLogin">
+          <h2>Login</h2>
+          <input type="text" id="nome" placeholder="Nome" required>
+          <input type="password" id="senha" placeholder="Senha" required>
+          <button type="submit">Entrar</button>
+      </form>
+      <p><a href="#" id="backFromLogin">Voltar</a></p>
+  </div>
+
+  <!-- Registro -->
+  <div id="registerPage" style="display:none;">
+      <form id="formRegister">
+          <h2>Registrar</h2>
+          <input type="text" id="regNome" placeholder="Nome" required>
+          <input type="password" id="regSenha" placeholder="Senha" required>
+          <input type="password" id="regSenhaConfirm" placeholder="Confirmar Senha" required>
+          <button type="submit">Criar Conta</button>
+      </form>
+      <p><a href="#" id="backFromRegister">Voltar</a></p>
+  </div>
+
+  <div id="gamesPage" style="display:none;">
+      <h1>Blog de Games</h1>
+      <div class="game">
+          <h2>Forza</h2>
+          <p>Informações do jogo.</p>
+          <br>
+          <p>Um jogo de carro com foco em corrida de rua, podendo usufruir de carros super esportivos a carros de ruas iconicos</p>
+      </div>
+      <div class="game">
+          <h2>Minecraft</h2>
+          <p>Informações do jogo.</p>
+          <br>
+          <p>Um jogo de sobrevivencia de mundo aberto, embora seu design caracteristico de mundo quadrado, ele entrega muita exploração e combinações de criação com servidores para multijogador</p>
+      </div>
+  </div>
+</body>
+</html>
