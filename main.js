@@ -1,6 +1,6 @@
 import Pessoa from "./model/Pessoa.js";
 import Aluno from "./model/Aluno.js";
-import Usuario from "./model/Usuario.js";
+import Usuario from "./Usuario.js";
 
 //-- Usuarios --
 let meuArrayDeUsuarios = [];
@@ -35,12 +35,13 @@ document.getElementById("formLogin").addEventListener("submit", function(e){
     e.preventDefault();
     const nome = document.getElementById("nome").value;
     const senha = document.getElementById("senha").value;
-    
-    // validação
-    if(nome && senha){
-        document.getElementById("loginPage").style.display = "none";
-        document.getElementById("gamesPage").style.display = "block";
-    } else {
-        alert("Supere a si mesmo para avançar");
+
+// validação do login
+if(nome === "RM25504" && senha === "M25504"){
+    document.getElementById("loginPage").style.display = "none";
+    document.getElementById("gamesPage").style.display = "block";
+} else {
+    alert("Usuário ou senha inválidos!");
+        }
     }
-});
+);
